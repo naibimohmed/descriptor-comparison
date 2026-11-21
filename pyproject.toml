@@ -1,0 +1,21 @@
+[project]
+name = "cifar10-descriptors"
+version = "0.1.0"
+description = "HOG, LBP, ORB+BoVW and ResNet-50 on CIFAR-10, with a PyQt6 app to test them"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "scikit-learn",
+    "scikit-image",
+    "opencv-python",
+    "joblib",
+    "PyQt6",
+    "torch",
+    "torchvision",
+]
+
+[tool.uv]
+package = false   # plain scripts, not an installable package
